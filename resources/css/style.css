@@ -1,3 +1,4 @@
+/* General */
 * {
   margin: 0;
   padding: 0;
@@ -14,20 +15,28 @@ body {
 }
 
 .main {
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex {
   display: flex;
+}
+
+.center {
+  align-items: center;
   justify-content: center;
 }
 
 /* Header */
 .header {
-  display: flex;
   justify-content: space-between;
-  align-items: center;
   background-color: black;
   height: 69px;
   border-bottom: 1px solid seashell;
   position: fixed;
   width: 100%;
+  z-index: 10;
 }
 
 #logo {
@@ -35,7 +44,6 @@ body {
 }
 
 .nav {
-  display: flex;
   justify-content: space-between;
 }
 
@@ -49,9 +57,6 @@ body {
 
 /* Jumbo */
 .jumbo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: relative;
   top: 70px;
   width: 1200px;
@@ -60,9 +65,7 @@ body {
 }
 
 .copy {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
   background-color: black;
   width: 1200px;
   height: 100px;
@@ -70,4 +73,22 @@ body {
 
 .copy h2 {
   margin-bottom: 10px;
+}
+
+/* Specials */
+.specials {
+  flex-direction: column;
+  position: relative;
+  top: 150px;
+  width: 1000px;
+}
+
+.tea img {
+  width: 300px;
+  height: 200px;
+}
+
+.row {
+
+
 }
