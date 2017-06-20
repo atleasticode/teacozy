@@ -15,7 +15,6 @@ body {
 }
 
 .main {
-  flex-direction: column;
   align-items: center;
 }
 
@@ -26,6 +25,10 @@ body {
 .center {
   align-items: center;
   justify-content: center;
+}
+
+.column {
+  flex-direction: column;
 }
 
 /* Header */
@@ -57,15 +60,13 @@ body {
 
 /* Jumbo */
 .jumbo {
-  position: relative;
-  top: 70px;
+  margin-top: 70px;
   width: 1200px;
   height: 700px;
   background-image: url("../img/mission-background.jpg");
 }
 
 .copy {
-  flex-direction: column;
   background-color: black;
   width: 1200px;
   height: 100px;
@@ -77,18 +78,63 @@ body {
 
 /* Specials */
 .specials {
-  flex-direction: column;
-  position: relative;
-  top: 150px;
+  margin-top: 150px;
   width: 1000px;
+}
+
+.specials-copy {
+  margin-bottom: 30px;
+}
+
+.tea {
+  margin: 0 15px;
 }
 
 .tea img {
   width: 300px;
   height: 200px;
+  margin-bottom: 10px;
 }
 
 .row {
+  margin-bottom: 30px;
+}
 
+/* Locations */
+.locations {
+  background-image: url("../img/locations-background.jpg");
+  width: 1200px;
+  height: 500px;
+  margin-top: 100px;
+}
 
+.stores {
+  margin-top: 15px;
+}
+
+.address {
+  background-color: black;
+  opacity: 1;
+  width: 300px;
+  margin: 0 20px;
+  padding: 20px 15px;
+}
+
+.address p {
+  margin-top: 35px;
+}
+
+/* Footer */
+.footer {
+  margin-top: 100px;
+  height: 200px;
+}
+
+.footer h5 {
+  margin-top: 20px;
+}
+
+#copyright {
+  text-align: left;
+  margin: 20px;
 }
